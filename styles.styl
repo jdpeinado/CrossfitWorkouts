@@ -1,0 +1,101 @@
+a
+	color #22BCE0
+
+body
+	background #EEEEEE
+	font-family "Arial"
+	font-size 16px
+
+footer
+	background #22BCE0
+	color rgba(255,255,255,0.7)
+	text-align center
+	padding 1em
+	p:first-child
+		margin-bottom 0
+	p:last-child
+		margin-top 0
+	p:last-child:after
+		content " -"
+	p:last-child:before
+		content "- "
+
+header
+	background #343B54
+	color white
+	overflow hidden
+	padding 0.5em
+	position relative
+	#avatar
+		margin 0.5em 0.5em 0 0
+		position absolute
+		right 0
+		top 0
+		img
+			border-radius 50%
+			width 55px
+	figure
+		float left
+	#logo
+		img
+			border-right 1px solid white
+			margin-right 0.5em
+			padding-right 0.5em
+			width 52px
+	h1
+		font-size 1.1em
+		font-weight normal
+		margin 0.2em 70px 0 0
+nav
+	background #80BCA3
+	padding 0 0.5em
+	position relative
+	ul
+		list-style none
+		margin 0
+		padding 0
+		li
+			display inline-block
+			margin 0 1em 0 0
+			a
+				color white
+				display block
+				padding 0.5em 0
+		#public_nav
+			position absolute
+			top -0.4em
+			right 0
+			a
+				background #22BCE0
+				border-radius 5px
+				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
+				font-style italic
+				padding 0.8em 0.5em
+				text-decoration none
+				text-shadow rgba(0,0,0,0.5) 2px 2px 5px
+#content
+	margin 1em
+	.item
+		background white
+		border-bottom 3px solid #22BCE0
+		overflow hidden
+		.image_item
+			float left
+			margin 0 1em 0 0
+			img
+				width 96px
+		.item_title
+			font-size 1.2em
+			font-style italic
+			a
+				color #444
+				text-decoration none
+		.type_item
+			background #F4502A
+			border-radius 0.5em
+			color white
+			float left
+			display inline-block
+			text-decoration none
+		.data_item
+			text-align right
