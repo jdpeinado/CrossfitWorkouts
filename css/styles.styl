@@ -60,8 +60,9 @@ nav
 			a
 				color white
 				display block
+				text-decoration none
 				padding 0.5em 0
-		#public_nav
+		#login_nav
 			position absolute
 			top -0.4em
 			right 0
@@ -74,28 +75,35 @@ nav
 				text-decoration none
 				text-shadow rgba(0,0,0,0.5) 2px 2px 5px
 #content
-	margin 1em
+	margin 1em 1em 1em 1em
 	.item
 		background white
 		border-bottom 3px solid #22BCE0
+		margin-bottom 1em
 		overflow hidden
-		.image_item
-			float left
-			margin 0 1em 0 0
-			img
-				width 96px
+		padding 0 1em 1em 1em
 		.item_title
 			font-size 1.2em
 			font-style italic
 			a
 				color #444
 				text-decoration none
-		.type_item
-			background #F4502A
-			border-radius 0.5em
-			color white
-			float left
+		.item_video
+			height 0
+			overflow hidden
+			padding 30px 0 56.25% 0
+			position relative
+			iframe,object,embed,video 
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+
+@media screen and (min-width:768px)
+	#content
+		.item
 			display inline-block
-			text-decoration none
-		.data_item
-			text-align right
+			width 45%
+			&:nth-child(odd)
+				margin-right 1%
